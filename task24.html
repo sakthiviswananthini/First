@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<style>
+			 .row{
+				display:flex;
+				flex-wrap:wrap;
+				} 
+			.col{
+				width:50%;
+			}
+			
+			.col img{
+				width:100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class = 'btn'>
+			<button onclick = 'fun("25%")' id = 'p' > 25% </button>
+			<!-- light blue -->
+			<button onclick = 'fun("50%")' id = 'p1'> 50% </button>
+			<!-- dark blue -->
+			<button onclick = 'fun("100%")' id = 'p2'> 100% </button>	
+			<!--light blue  -->
+		</div>
+		<div class = 'row'>
+			<div class = 'col'>
+				<img src="img1.jfif"/>
+				<img src="img2.jfif"/>
+				<img src="img3.jfif" />
+			</div>	
+			<div class = 'col'>
+				<img src="img4.jfif" />
+				<img src="img5.jfif" />	
+				<img src="img6.jfif" />
+			</div>
+			<div class = 'col'>
+				<img src="img7.jfif" />
+				<img src="img1.jfif" />
+				<img src="img2.jfif" />
+			</div>
+			<div class = 'col'>
+				<img src="img4.jfif" />
+				<img src="img6.jfif" />
+				<img src="img7.jfif" />
+		
+			</div>
+
+		</div>
+
+	<script>
+		var c = document.getElementsByClassName('col')
+		function fun(x)
+		{
+			
+			for(var i=0;i<c.length;i++)
+			{
+				c[i].style.width= x;
+
+			}
+				
+		}
+	</script>
+	</body>
+</html>
